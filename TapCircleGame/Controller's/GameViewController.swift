@@ -31,7 +31,7 @@ class GameViewController: UIViewController {
         for(index, circle) in viewArray.enumerated() {
             let location = gesture.location(in: circle)
             
-            if (location.x > 0 && location.x < 110) && (location.y > 0 && location.y < 110) {
+            if (location.x > 20 && location.x < 100) && (location.y > 20 && location.y < 100) {
                 circle.removeFromSuperview()
                 viewArray.remove(at: index)
                 
